@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VoHongPhuc</string>
+    <!-- res/values/strings.xml -->
+    <string name="login_register_title">LOGIN OR REGISTER</string>
+    <string name="login_email_title">Email</string>
+    <string name="login_password_title">Password</string>
+    <string name="login_con_title">ConfigPassword</string>
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:background="#FFF9C4"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#C8E6C9"
+            android:text="View"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="Btn"
+            android:background="#388E3C"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:orientation="horizontal">
+
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+        <Button android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25" android:text="Btn" />
+    </LinearLayout>
+
+</LinearLayout>
