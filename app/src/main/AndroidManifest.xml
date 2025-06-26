@@ -13,7 +13,17 @@
         android:theme="@style/Theme.VoHongPhuc"
         tools:targetApi="31">
 
-        <!-- Đây là màn hình mở đầu: Login_Activity -->
+        <!-- Giỏ hàng - KHÔNG đặt MAIN/LAUNCHER ở đây -->
+        <activity
+            android:name=".Shopcat_Activity"
+            android:exported="true" />
+
+        <!-- Detail -->
+        <activity
+            android:name=".Detail_Activity"
+            android:exported="true" />
+
+        <!-- Login - Đặt là màn hình khởi động -->
         <activity
             android:name=".Login_Activity"
             android:exported="true">
@@ -23,18 +33,15 @@
             </intent-filter>
         </activity>
 
-        <!-- Các màn hình khác -->
         <activity
             android:name=".Layout_Activity"
             android:exported="true" />
-
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
-
         <activity
             android:name=".Home_Activity"
             android:exported="true" />
-
     </application>
+
 </manifest>

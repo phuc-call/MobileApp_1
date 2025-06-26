@@ -41,23 +41,27 @@ public class Login_Activity extends AppCompatActivity {
                 EditText objPhone = findViewById(R.id.editTextTextEmailAddress2);
                 EditText objPass = findViewById(R.id.editTextTextPassword2);
 
-                String txtPhone = objPhone.getText().toString();
-                String txtPass = objPass.getText().toString();
-                // Lấy thông tin đã lưu từ SharedPreferences
-                SharedPreferences prefs = getSharedPreferences("UserData", Context.MODE_PRIVATE);
-                String savedEmail = prefs.getString("email", "");
-                String savedPassword = prefs.getString("password", "");
+                String txtPhone = objPhone.getText().toString().trim();
+                String txtPass = objPass.getText().toString().trim();
 
-                if (txtPhone.equals(savedEmail) && txtPass.equals(savedPassword)) {
+                // Kiểm tra mật khẩu có phải là số hay không
+                if (!txtPass.matches("\\d+")) {
+                    Toast.makeText(getApplicationContext(), "Mật khẩu phải là số!", Toast.LENGTH_LONG).show();
+                    return;
+                }
+
+                // So sánh với thông tin gán cứng
+                if (txtPhone.equals("phucboygo@gmail.com") && txtPass.equals("123")) {
                     Toast.makeText(getApplicationContext(), "Login success!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(Login_Activity.this, Home_Activity.class);
                     startActivity(intent);
-                    finish(); // Đóng màn login
+                    finish(); // Đóng màn hình login
                 } else {
-                    Toast.makeText(getApplicationContext(), "Login fail!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Password or Email not default!", Toast.LENGTH_LONG).show();
                 }
             }
         });
+
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

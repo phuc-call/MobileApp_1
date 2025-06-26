@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,5 +33,25 @@ public class Home_Activity extends AppCompatActivity {
                     startActivity(b);
             }
         });
+        LinearLayout item = findViewById(R.id.itemContainer);
+
+        item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Activity.this, Detail_Activity.class);
+                startActivity(intent);
+            }
+        });
+        Button btnNavHome = findViewById(R.id.btnNavHome);
+        btnNavHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Mở giỏ hàng
+                Intent intent = new Intent(Home_Activity.this, Shopcat_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
